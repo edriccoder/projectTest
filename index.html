@@ -25,13 +25,27 @@
       <!-- Player -->
       <div class="player">
         <img src="#" alt="Episode Thumbnail">
-        <div class="player-info">
-          <div><strong>EP 110: LOREM IMPSUM</strong></div>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        </div>
-        <div class="player-controls">
-          <button class="play-btn">▶</button>
-          <small>00:00:00 | 01:00:12</small>
+        <div class="player-right">
+          <div class="player-info">
+            <div><strong>EP 110: LOREM IMPSUM</strong></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+
+          <div class="player-controls">
+            <button class="play-btn" aria-label="Play">▶</button>
+
+            <div class="controls-row">
+              <img src="./image/left15sec.png" alt="Back 15s" title="Back 15s" class="skip-img skip-left">
+              <img src="./image/right15sec.png" alt="Forward 15s" title="Forward 15s" class="skip-img skip-right">
+              <div class="speed">1x</div>
+              <small class="time">00:00:00 | 01:00:12</small>
+            </div>
+
+            <div class="share-subscribe">
+              <a>Share</a>
+              <a>Subscribe</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -80,10 +94,14 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-card">
-        <div class="episode-meta">EPISODE 1972 &nbsp;&nbsp; AUGUST 25, 2025</div>
-        <img src="#" alt="Episode Image">
+        <div class="episode-sidebar">
+          <div class="episode">EPISODE 1672</div>
+          AUGUST 25, 2025 
+        </div>
+        <img src="#">
         <div class="sidebar-title">MURDERED: Sarah Yarborough</div>
-        <p>The Wild West. Folks I Want To Thank Everyone Who Came Out...</p>
+        <p class="sidebar-description">The Wild West, Folks. I Want To Thank Everyone Who Came Out To The Screening Of McCabe 
+          And Mrs. Miller Last Night At The Aero Theater For American Cinematheque. It Was An Amazing Print. I...</p>
         <a href="#" class="btn btn-red">LISTEN NOW →</a>
       </div>
 
