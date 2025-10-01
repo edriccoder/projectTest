@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   background: #f9f9f9;
   margin: 0;
   padding: 0;
@@ -85,16 +85,17 @@ body {
   margin: 0 !important; 
   font-size: 18px;
   line-height: 1.7;     
+  flex-grow: 1;
 }
 
 .player {
   display: flex;
   align-items: flex-start;
   border: 1px solid #ddd;
-  border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
   gap: 3rem;
+  box-shadow: 0 4px 12px -2px rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.08);
 }
 
 .player > img {
@@ -182,9 +183,16 @@ body {
   align-items: center;
 }
 
-.share-subscribe > a {
+.share-subscribe > button {
   font-size: 1.5rem;
   color: #494949;
+  background: none;
+  border: none;
+}
+
+.share-subscribe > button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 /* Listen On */
@@ -201,6 +209,11 @@ body {
   width: 60px;
   height: 60px;
   cursor: pointer;
+}
+
+.listen-on img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 /* Video */
@@ -249,13 +262,12 @@ body {
 }
 
 .sidebar-card img {
-  width: 100%;
   height: 250px;
 }
 
 .sidebar-title {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   margin-bottom: 0.5rem;
 }
@@ -295,6 +307,11 @@ body {
   font-size: 0.9rem;
 }
 
+.all-episodes-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
 .all-episodes-btn::after {
   content: "→";  
   font-weight: bold;
@@ -303,4 +320,6 @@ body {
 .sidebar-description { 
   color: #ffffff; 
   line-height: 1.1;  
+  font-size: 1rem;
+  line-height: 1.2;
 }
